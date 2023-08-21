@@ -33,8 +33,15 @@ interface ContactState {
   isDeleted?: boolean;
 }
 
+const initialContact: Contact = {
+  _id: "",
+  firstName: "",
+  lastName: "",
+  status: "",
+};
+
 export const contactReducer = (
-  state: ContactState = { contact: null, loading: false },
+  state: ContactState = { contact: initialContact, loading: false },
   action: PayloadAction<Contact>
 ) => {
   switch (action.type) {
@@ -87,13 +94,6 @@ export const allContactReducer = (
     default:
       return state;
   }
-};
-
-const initialContact: Contact = {
-  _id: "",
-  firstName: "",
-  lastName: "",
-  status: "",
 };
 
 export const contactDetailsReducer = (

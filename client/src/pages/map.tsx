@@ -23,7 +23,7 @@ const Map: React.FC = () => {
   }
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center">
+    <div className="w-full h-screen flex flex-col">
       <h2 className="text-2xl">COVID-19 Map</h2>
       <div className="w-full mt-4 h-[90vh] max-w-screen-xl z-0">
         <MapContainer

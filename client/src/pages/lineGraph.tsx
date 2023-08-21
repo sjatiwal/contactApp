@@ -25,7 +25,7 @@ const LineGraph: React.FC = () => {
 
   return (
     <div className="overflow-scroll  ml-4">
-      <h2 className="text-2xl">Worldwide Cases Fluctuations</h2>
+      <h2 className="text-2xl">Cases with Date </h2>
       <ResponsiveContainer width={1100} height={300}>
         <LineChart
           data={formattedData}
